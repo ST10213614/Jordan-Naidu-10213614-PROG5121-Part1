@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author jordz
  */
-public class Login {
+public class Login_Task1 {
 
     public boolean checkUserName(String username) {
         String usernam = username;
@@ -54,9 +54,7 @@ public class Login {
                 for (int i = 0; i < 9; i++) {
                     if (number[i].equals(temp)) {
 
-                        j = code.length();
-                        i = 9;
-                        count++;
+                       
                         // capital
                         for (int x = 0; x < code.length(); x++) {
                             c = code.charAt(x);
@@ -65,9 +63,7 @@ public class Login {
                             for (int y = 0; y < 26; y++) {
                                 if (capital[y].equals(temp)) {
 
-                                    x = code.length();
-                                    y = 26;
-                                    count++;
+                                    
                                     //special
                                     for (int h = 0; h < code.length(); h++) {
                                         c = code.charAt(h);
@@ -76,9 +72,7 @@ public class Login {
                                         for (int k = 0; k < 29; k++) {
                                             if (special[k].equals(temp)) {
 
-                                                h = code.length();
-                                                k = 29;
-                                                count++;
+                                               pass = true;
                                             }
 
                                         }
@@ -94,14 +88,7 @@ public class Login {
                 }//end for i
             } //end for j
         }// end if
-        if (count < 3) {
-            pass = false;
-
-            count = 0;
-        } else {
-            pass = true;
-
-        }
+       
 
         return pass;
     }

@@ -10,14 +10,14 @@ import javax.swing.JOptionPane;
  *
  * @author jordz
  */
-public class LoginGUI extends javax.swing.JFrame {
+public class LoginGUI_Task1 extends javax.swing.JFrame {
 
     
-    Login obj = new Login();
+    Login_Task1 obj = new Login_Task1();
     /**
      * Creates new form login
      */
-    public LoginGUI() {
+    public LoginGUI_Task1() {
         JOptionPane.showMessageDialog(null, "Hi user please enter your First Name and Surname on the next tab and then press OK to proceed");
         initComponents();
     }
@@ -336,21 +336,23 @@ JOptionPane.showMessageDialog(null, "Please create a username and password and m
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginGUI_Task1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginGUI_Task1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginGUI_Task1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LoginGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginGUI_Task1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LoginGUI().setVisible(true);
+                new LoginGUI_Task1().setVisible(true);
             }
         });
     }
